@@ -20,4 +20,8 @@ You can follow the instructions below to get the main results in the manuscript:
 
 - **diversity_BMI_ethnicity.R**, **diversity_BMI_AGP_HMP.R**, and **species_BMI_correlation.R** were used to compute the correlation between BMI with alpha diversity and microbial taxa.
 
-- **pathway_abundance_analysis.R** was used to identify the differentially abundant functional modules between obese and healthy controls and correlation_function_genera.R was used to correlate the taxa and functional modules.
+- **pathway_abundance_analysis.R** was used to identify the differentially abundant functional modules between obese and healthy controls and **correlation_function_genera.R** was used to correlate the taxa and functional modules.
+
+- For the classification models to discriminate obese and lean subjects, the XGBoost, Neural Network, and Random Forest models were constructed using **XGBoost_model_training.py**, **Neural_network_model_training.py**, **Random_Forest_model_training.py**. There were several functions in **utils.py** that should be imported into these scripts.
+
+- The **KLIEP** algorithm we applied for correcting covariate shift in the dataset can be found in this [link](https://github.com/srome/pykliep).
